@@ -1,3 +1,6 @@
+import {CityType} from "./04"
+//the import is not used, but WebStorm yelled at me due to I have not used any import\export
+
 test("should take men older 90", () => {
     const ages = [18, 20, 22, 1, 100, 90, 14];
 
@@ -14,10 +17,10 @@ test("should take courses cheaper 160", () => {
         {title: "React", price: 150},
         ];
 
-    type coursesType = {
+/*    type coursesType = {
         title: string
         price: number
-    }
+    }*/
 
     const cheapCourses = courses.filter(course => course.price < 160);
 
